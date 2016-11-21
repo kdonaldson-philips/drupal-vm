@@ -56,7 +56,10 @@ Notes:
   5. Install the vagrant `auto_network` plugin (`vagrant plugin install vagrant-auto_network`), so that Vagrant can help with IP address management
   6. Type in `vagrant up`, and let Vagrant do its magic.
 
-Note: *If there are any errors during the course of running `vagrant up`, and it drops you back to your command prompt, just run `vagrant provision` to continue building the VM from where you left off. If there are still errors after doing this a few times, send and email to Keith Donaldson.
+Note:
+  - Due to a bug in Windows Ruby, it is necessary to reset the Vagrant home:
+  -- setx VAGRANT_HOME c:\vagrant
+  - If there are any errors during the course of running `vagrant up`, and it drops you back to your command prompt, just run `vagrant provision` to continue building the VM from where you left off. If there are still errors after doing this a few times, send and email to Keith Donaldson.
 
 ### 3 - Import the database
 
