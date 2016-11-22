@@ -50,7 +50,7 @@ Notes:
 
   1. Download the Philips CEP and put it wherever you want.
   2. Download this project and put it wherever you want.
-  2. Modify 'config.yml` so that the <<LOCATION OF THE DEVELOPERPORTAL>> placeholder reflects the path to the CEP repo
+  2. Replace the \<\<LOCATION OF THE DEVELOPERPORTAL\>\> placeholder in 'config.yml` with the path to the CEP repo on your machine
   3. Open Terminal, `cd` to this directory (containing the `Vagrantfile` and this README file).
   4. Install the vagrant `hostsupdater` plugin (`vagrant plugin install vagrant-hostsupdater`), so that Vagrant automatically configure your hosts file. All hosts defined in `apache_vhosts` or `nginx_hosts` will be automatically managed. `vagrant-hostmanager` is also supported.
   5. Install the vagrant `auto_network` plugin (`vagrant plugin install vagrant-auto_network`), so that Vagrant can help with IP address management
